@@ -1,0 +1,404 @@
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Neometric Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Neometric Regular'), url('/css/fonts/neometric-2-cufonfonts-webfont/Neometric-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Neometric Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Neometric Light'), url('/css/fonts/neometric-2-cufonfonts-webfont/Neometric Light (Regular).woff') format('woff');
+}
+@font-face {
+    font-family: 'Neometric Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Neometric Medium'), url('/css/fonts/neometric-2-cufonfonts-webfont/Neometric Medium (Regular).woff') format('woff');
+}
+@font-face {
+    font-family: 'bebas';
+    font-style: normal;
+    font-weight: normal;
+    src: local('bebas'), url('/css/fonts/bebas_regular_macroman/Bebas-Regular-webfont.woff') format('woff');
+}
+
+/* creation des variables usuelles  */
+:root {
+    --green-1: #05A52E;
+    --green-2: #27AE60;
+    --white: #FFFFFF;
+    --white2: #f2f2f2;
+    --smoke-white-50: rgba(242,242,242,0.5);
+    --smoke-white-75: rgba(242,242,242,0.75);
+    --gray: #828282;
+    --light-gray: #E0E0E0;
+    --gray-bg: #F8F8F8;
+    --dark-blue: #021033;
+    --blue: #08256B;
+    font-size: 10px;
+}
+
+/* ====> Global styles */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Neometric Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    min-height: 100vh;
+}
+.graybg {
+    background-color: var(--gray-bg);
+}
+main {
+    min-height: 50px;
+}
+main > section {
+    padding: 40px 20px;
+}
+.accessibility {
+    position: absolute;
+    left: -15000px;
+}
+/* <==== End fo global styles  */
+
+/* ====> contact page */
+form {
+    padding: 0 20px 40px 20px;
+}
+form input, form textarea {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--white2);
+    border: 0px;
+    padding: 10px;
+    font-size: .8em;
+    color: var(--gray);
+    margin-bottom: 15px;
+}
+form textarea {
+    min-height: 150px;
+}
+form input[type=button] {
+    color: var(--white);
+    text-align: center;
+    background-color: var(--green-1);
+}
+
+#testimonials {
+    background-color: var(--light-gray);
+
+}
+#testimonials h2 {
+    text-transform: capitalize;
+}
+#testimonials .content .card header {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 50px;
+}
+#testimonials .content .card {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--gray-bg);
+    box-shadow: 0px 0px 1em var(--gray);
+}
+#testimonials .content .card header .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#testimonials .content .card header .title h3, #testimonials .content .card header .title p {
+    margin: 0;
+    padding: 0 10px;
+    font-size: .7em;
+    font-family: 'Neometric Light';
+}
+#testimonials .content .card header .title h3 {
+    color: var(--green-1);
+}
+#testimonials .content .card header .title p {
+    color: var(--gray);
+}
+#testimonials .content .card .comment {
+    margin: 15px 0 0 60px;
+    font-size: .75em;
+    color: var(--gray);
+    line-height: 150%;
+}
+
+/* End contact page  <=== */
+img {
+    width: 100%;
+    height: auto;
+}
+.greenTitle {
+    font-family: 'bebas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 144.52%;
+    color: var(--green-1);
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+.blackGreenTitle {
+    font-family: 'Neometric Medium';
+    font-size: 3.5em;
+    color: #000;
+    margin-bottom: 30px;
+}
+.blackGreenTitle span {
+    display: block;
+    color: var(--green-1);
+    font-size: 1em;
+}
+section > h2 {
+    font-size: 1.4em;
+    line-height: 150%;
+    width: 80%;
+}
+main section > p {
+    font-size: 1em;
+    width: 85%;
+    color: var(--gray);
+    line-height: 150%;
+    font-family: 'Neometric Light';
+}
+/* End of global styles */
+
+/* Header styles */
+#topHeader {
+    height: 87px;
+    display: grid;
+    position: relative;
+    grid-template-columns: 70px 1fr 50px;
+}
+#topHeader > h1 {
+    margin: 0;
+}
+#logoImg {
+    padding: 5px;
+}
+#topHeader ul {
+    list-style: none;
+    color: var(--white);
+    font-size: 1em;
+    margin: 0;
+    padding-left: 70px;
+}
+#topHeader ul a {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+}
+.ctaContactUs {
+    display: inline-block;
+    color: var(--white);
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 70px;
+    background-color: var(--green-1);
+    border-radius: 5px;
+}
+#mainNav {
+    margin: 0;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    background-color: var(--dark-blue);
+    font-size: 1em;
+    line-height: 190%;
+    top: 70px;
+    display: none;
+}
+#logoLink {
+    display: flex;
+    align-items: center;
+}
+#menuToggle {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#bottomHeader {
+    background-color: var(--dark-blue);
+    background-position: -10% 70%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header section.homePage {
+    background-image: url(/images/headerBottomImage.svg);
+    background-size: 250%;
+    height: 90vh;
+    background-repeat: no-repeat;
+}
+header section.othersPages {
+    height: 45vh;
+}
+
+#bottomHeader h2 {
+    color: var(--white2);
+    font-size: 2.1em;
+    font-weight: 600;
+    line-height: 144.52%;
+    margin-bottom: 50px;
+}
+#bottomHeader a {
+    color: var(--smoke-white-75);
+    font-size: 1em;
+    text-decoration: none;
+} 
+/* End of header styles */
+
+/* ===> main content style */
+.digitalAgency .projects {
+    display: grid;
+    gap: 10px;
+}
+.digitalAgency .card {
+    overflow: hidden;
+}
+.card {
+    position: relative;
+}
+.projects .card {
+    height: 400px;
+}
+.card img {
+    font-size: 0.5em;
+}
+.card .details {
+    padding: 0 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(15.87deg, rgba(30, 25, 25, 0.81) 9.62%, rgba(255, 255, 255, 0) 88.08%);
+}
+.card .details h1 {
+    font-size: 1em;;
+}
+.card .details h2 {
+    font-size: 0.8em;;
+    font-family: 'Neometric Light';
+    color: var(--white2);
+}
+.card .details p {
+    font-size: 0.6em;;
+    font-family: 'Neometric Regular';
+    color: var(--green-2);
+}
+
+.digitalAgency2 {
+    background-color: var(--green-1);
+    background-image: url(/images/image-bg2-mini.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right center;
+}
+.digitalAgency2 .greenTitle {
+    color: var(--white);
+}
+.digitalAgency2 a {
+    font-size: 1em;
+    font-family: 'Neometric Medium';
+    color: var(--white);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.technologies {
+    background-color: var(--white2);
+}
+
+.blackGreenTitle span::after {
+    content: '.';
+    color: var(--green-1);
+    font-size: 1em;
+}
+
+.serviceSlide {
+    position: relative;
+}
+.whatWeDo .serviceSlide .card .title h1 {
+    font-size: 3.5em;
+    font-family: 'Neometric Medium';
+    color: var(--light-gray);
+}
+.whatWeDo .serviceSlide .card .title h1::after {
+    content: '.';
+    color: var(--green-1);
+}
+.whatWeDo .serviceSlide .description .content {
+    position: absolute;
+    background-color: #000;
+    width: 40%;
+    right: 0;
+    padding: 5px;
+    bottom: -5px;
+}
+
+.whatWeDo .serviceSlide .card .description img {
+    width: 90%;
+}
+.whatWeDo .serviceSlide .card .description .content h1 {
+    color: var(--green-1);
+    font-size: .85em;
+    margin: 5px;
+}
+.whatWeDo .serviceSlide .card .description .content p {
+    color: var(--light-gray);
+    font-size: .5em;
+    font-family: 'Neometric Light';
+    margin: 5px;
+}
+section.contact {
+    text-align: center;
+    background-image: url(/images/green-double-circle.svg);
+    background-repeat: no-repeat;
+    background-position: -90% -40%;
+}
+section.contact h1 {
+    font-size: 2em;
+    margin: 0;
+}
+section.contact p {
+    font-family: 'Neometric Light';
+    font-size: 2em;
+    width: 100%;
+    margin: 0;
+}
+section.contact a {
+    display: flex;
+    margin: 10px auto;
+    font-size: .9em;
+    font-family: 'Neometric Medium';
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #D9D9D9 0%, #163E9E 0.01%, #031541 100%);
+    border: 1px solid #000000;
+    transform: rotate(-45deg);
+}

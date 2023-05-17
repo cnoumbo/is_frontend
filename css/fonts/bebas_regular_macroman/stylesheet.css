@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'bebasregular';
+    src: url('Bebas-Regular-webfont.eot');
+    src: url('Bebas-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Bebas-Regular-webfont.woff2') format('woff2'),
+         url('Bebas-Regular-webfont.woff') format('woff'),
+         url('Bebas-Regular-webfont.ttf') format('truetype'),
+         url('Bebas-Regular-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
